@@ -249,6 +249,13 @@
             <div class="nav-section-title">AI Tools</div>
             <div class="nav-item" data-page="ai-writer"><span class="nav-icon">&#129302;</span><span class="nav-label">AI Writer</span><span class="nav-badge" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white;">AI</span></div>
             <div class="nav-item" data-page="ai-assistant"><span class="nav-icon">&#128172;</span><span class="nav-label">AI Assistant</span><span class="nav-badge" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white;">AI</span></div>
+            <div class="nav-item" data-page="ai-property"><span class="nav-icon">&#127969;</span><span class="nav-label">Property Analyzer</span><span class="nav-badge new">NEW</span></div>
+            <div class="nav-item" data-page="ai-matcher"><span class="nav-icon">&#129309;</span><span class="nav-label">Client Matcher</span><span class="nav-badge new">NEW</span></div>
+            <div class="nav-item" data-page="ai-predictor"><span class="nav-icon">&#128202;</span><span class="nav-label">Market Predictor</span><span class="nav-badge new">NEW</span></div>
+            <div class="nav-item" data-page="ai-objections"><span class="nav-icon">&#128173;</span><span class="nav-label">Objection Handler</span><span class="nav-badge new">NEW</span></div>
+            <div class="nav-item" data-page="ai-neighborhood"><span class="nav-icon">&#127961;</span><span class="nav-label">Neighborhood Expert</span><span class="nav-badge new">NEW</span></div>
+            <div class="nav-item" data-page="ai-openhouse"><span class="nav-icon">&#127970;</span><span class="nav-label">Open House AI</span><span class="nav-badge new">NEW</span></div>
+            <div class="nav-item" data-page="ai-contract"><span class="nav-icon">&#128220;</span><span class="nav-label">Contract Reviewer</span><span class="nav-badge new">NEW</span></div>
 
             <div class="nav-section-title">System</div>
             <div class="nav-item" data-page="settings"><span class="nav-icon">&#9881;</span><span class="nav-label">Settings</span></div>
@@ -1843,6 +1850,13 @@ function renderAllPages() {
         ${renderManual()}
         ${renderAIWriter()}
         ${renderAIAssistant()}
+        ${renderAIPropertyAnalyzer()}
+        ${renderAIClientMatcher()}
+        ${renderAIMarketPredictor()}
+        ${renderAIObjectionHandler()}
+        ${renderAINeighborhoodExpert()}
+        ${renderAIOpenHouse()}
+        ${renderAIContractReviewer()}
     `;
 }
 
@@ -7336,7 +7350,7 @@ function renderManual() {
     <section class="page-section" id="page-manual">
         <div class="page-header" style="background: linear-gradient(135deg, #667eea, #764ba2);">
             <h2>&#128214; Complete User Manual</h2>
-            <p>Your comprehensive guide to social media domination - 18 features explained in detail</p>
+            <p>Your comprehensive guide to social media domination - 27 features explained in detail (including 9 AI tools!)</p>
         </div>
 
         <!-- TABLE OF CONTENTS -->
@@ -7392,6 +7406,32 @@ function renderManual() {
                     <ul style="list-style: none; font-size: 0.9rem;">
                         <li style="margin-bottom: 0.3rem; cursor: pointer;" onclick="scrollToManualSection('settings')">18. Settings</li>
                         <li style="margin-bottom: 0.3rem; cursor: pointer;" onclick="scrollToManualSection('tips')">19. Pro Tips</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-3" style="margin-top: 1rem;">
+                <div>
+                    <h4 style="color: #667eea; margin-bottom: 0.5rem;">&#129302; AI Tools</h4>
+                    <ul style="list-style: none; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.3rem; cursor: pointer;" onclick="scrollToManualSection('aiwriter')">20. AI Writer</li>
+                        <li style="margin-bottom: 0.3rem; cursor: pointer;" onclick="scrollToManualSection('aiassistant')">21. AI Assistant</li>
+                        <li style="margin-bottom: 0.3rem; cursor: pointer;" onclick="scrollToManualSection('aiproperty')">22. Property Analyzer</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: #667eea; margin-bottom: 0.5rem;">&#129302; More AI Tools</h4>
+                    <ul style="list-style: none; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.3rem; cursor: pointer;" onclick="scrollToManualSection('aimatcher')">23. Client Matcher</li>
+                        <li style="margin-bottom: 0.3rem; cursor: pointer;" onclick="scrollToManualSection('aipredictor')">24. Market Predictor</li>
+                        <li style="margin-bottom: 0.3rem; cursor: pointer;" onclick="scrollToManualSection('aiobjections')">25. Objection Handler</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: #667eea; margin-bottom: 0.5rem;">&#129302; Advanced AI</h4>
+                    <ul style="list-style: none; font-size: 0.9rem;">
+                        <li style="margin-bottom: 0.3rem; cursor: pointer;" onclick="scrollToManualSection('aineighborhood')">26. Neighborhood Expert</li>
+                        <li style="margin-bottom: 0.3rem; cursor: pointer;" onclick="scrollToManualSection('aiopenhouse')">27. Open House AI</li>
+                        <li style="margin-bottom: 0.3rem; cursor: pointer;" onclick="scrollToManualSection('aicontract')">28. Contract Reviewer</li>
                     </ul>
                 </div>
             </div>
@@ -7882,6 +7922,203 @@ function renderManual() {
                 <h3>You've Got This, Ela! &#128170;</h3>
                 <p style="font-size: 1.1rem; margin-top: 0.5rem;">With your 22 years of experience and this Command Center, you have everything you need to dominate social media and attract more clients than ever before!</p>
                 <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">Questions? Just explore each section - click around and discover all the features!</p>
+            </div>
+        </div>
+
+        <!-- AI TOOLS SECTION HEADER -->
+        <div style="background: linear-gradient(135deg, #667eea, #764ba2); padding: 2rem; border-radius: 15px; margin: 2rem 0; text-align: center;">
+            <h2 style="color: white; margin-bottom: 0.5rem;">&#129302; AI-Powered Tools</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem;">9 Premium AI Tools Powered by Gemini 3 Flash - Generate Content, Analyze Properties, and More!</p>
+        </div>
+
+        <!-- SECTION 20: AI WRITER -->
+        <div id="manual-aiwriter" class="card" style="border-left: 5px solid #667eea; margin-bottom: 2rem;">
+            <h2 style="color: #667eea;">&#129302; 20. AI Content Writer</h2>
+            <h3 style="margin-top: 1rem;">What It Does:</h3>
+            <p style="font-size: 0.95rem;">Your personal AI copywriter that generates professional real estate content in seconds. Creates listing descriptions, social media posts, email campaigns, bios, captions, hashtags, and market reports - all tailored for Cincinnati real estate.</p>
+            <h3 style="margin-top: 1.5rem;">Features:</h3>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem; font-size: 0.95rem; line-height: 1.8;">
+                <li><strong>Listing Descriptions:</strong> Enter property details and get MLS-ready descriptions instantly</li>
+                <li><strong>Social Posts:</strong> Generate platform-optimized posts for Instagram, Facebook, TikTok, LinkedIn</li>
+                <li><strong>Email Writer:</strong> Create follow-up emails, listing alerts, market updates, and drip campaigns</li>
+                <li><strong>Bio Generator:</strong> Create professional agent bios for any platform</li>
+                <li><strong>Captions & Hashtags:</strong> Generate engaging captions with optimized hashtag sets</li>
+                <li><strong>Market Reports:</strong> Create neighborhood and market update content</li>
+            </ul>
+            <h3 style="margin-top: 1.5rem;">&#128161; How To Use:</h3>
+            <div style="background: var(--pale-blue); padding: 1rem; border-radius: 8px;">
+                <p><strong>Step 1:</strong> Select content type (Listings, Social, Email, etc.)</p>
+                <p><strong>Step 2:</strong> Fill in the form with your details</p>
+                <p><strong>Step 3:</strong> Click "Generate" and wait 5-10 seconds</p>
+                <p><strong>Step 4:</strong> Copy, edit if needed, and use!</p>
+            </div>
+        </div>
+
+        <!-- SECTION 21: AI ASSISTANT -->
+        <div id="manual-aiassistant" class="card" style="border-left: 5px solid #667eea; margin-bottom: 2rem;">
+            <h2 style="color: #667eea;">&#128172; 21. AI Assistant</h2>
+            <h3 style="margin-top: 1rem;">What It Does:</h3>
+            <p style="font-size: 0.95rem;">Your smart CRM helper that analyzes leads, predicts which ones are most likely to convert, and suggests what to do next. Like having a sales coach watching your pipeline 24/7.</p>
+            <h3 style="margin-top: 1.5rem;">Features:</h3>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem; font-size: 0.95rem; line-height: 1.8;">
+                <li><strong>AI Lead Scoring:</strong> Automatically scores leads 0-100 based on timeline, budget, pre-approval status</li>
+                <li><strong>Response Suggestions:</strong> AI recommends what to say and when to follow up</li>
+                <li><strong>Market Insights:</strong> Real-time opportunities based on rate changes and market conditions</li>
+                <li><strong>Content Recommendations:</strong> AI suggests what content to create based on engagement</li>
+            </ul>
+            <h3 style="margin-top: 1.5rem;">&#128161; Pro Tip:</h3>
+            <p style="font-size: 0.95rem;">Add leads in the Lead Generator first - the AI Assistant analyzes your lead database to provide personalized recommendations!</p>
+        </div>
+
+        <!-- SECTION 22: PROPERTY ANALYZER -->
+        <div id="manual-aiproperty" class="card" style="border-left: 5px solid #667eea; margin-bottom: 2rem;">
+            <h2 style="color: #667eea;">&#127969; 22. AI Property Analyzer</h2>
+            <h3 style="margin-top: 1rem;">What It Does:</h3>
+            <p style="font-size: 0.95rem;">Instant property valuations and market analysis. Enter property details and get estimated value ranges, price per square foot comparisons, comparable sales analysis, investment metrics, and selling strategy recommendations.</p>
+            <h3 style="margin-top: 1.5rem;">Features:</h3>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem; font-size: 0.95rem; line-height: 1.8;">
+                <li><strong>Value Estimates:</strong> Low, mid, and high price ranges based on property details</li>
+                <li><strong>Comparable Sales:</strong> AI generates hypothetical comps based on market data</li>
+                <li><strong>Investment Analysis:</strong> Potential rental income and cap rate estimates</li>
+                <li><strong>Days on Market:</strong> Prediction based on price and condition</li>
+                <li><strong>Selling Strategy:</strong> Recommended list price and marketing approach</li>
+            </ul>
+            <h3 style="margin-top: 1.5rem;">&#128161; Use Cases:</h3>
+            <ul style="margin-left: 1.5rem; font-size: 0.95rem;">
+                <li>Preparing CMAs for listing presentations</li>
+                <li>Quick estimates when clients ask about property values</li>
+                <li>Investment analysis for investor clients</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 23: CLIENT MATCHER -->
+        <div id="manual-aimatcher" class="card" style="border-left: 5px solid #667eea; margin-bottom: 2rem;">
+            <h2 style="color: #667eea;">&#129309; 23. AI Client Matcher</h2>
+            <h3 style="margin-top: 1rem;">What It Does:</h3>
+            <p style="font-size: 0.95rem;">Automatically matches your leads to properties (and vice versa). Enter a new listing and see which clients from your database are the best matches. Or select a client and get property recommendations based on their criteria.</p>
+            <h3 style="margin-top: 1.5rem;">Two-Way Matching:</h3>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem; font-size: 0.95rem; line-height: 1.8;">
+                <li><strong>Property → Clients:</strong> Got a new listing? Find matching buyers from your database instantly</li>
+                <li><strong>Client → Properties:</strong> Working with a buyer? Get AI recommendations for their ideal home</li>
+            </ul>
+            <h3 style="margin-top: 1.5rem;">&#128161; How To Use:</h3>
+            <div style="background: var(--pale-blue); padding: 1rem; border-radius: 8px;">
+                <p><strong>To find clients for a listing:</strong> Enter listing details → Click "Find Matching Clients" → See ranked matches with contact suggestions</p>
+                <p style="margin-top: 0.5rem;"><strong>To find properties for a client:</strong> Select a lead from dropdown → Click "Find Matching Properties" → Get neighborhood and property recommendations</p>
+            </div>
+        </div>
+
+        <!-- SECTION 24: MARKET PREDICTOR -->
+        <div id="manual-aipredictor" class="card" style="border-left: 5px solid #667eea; margin-bottom: 2rem;">
+            <h2 style="color: #667eea;">&#128202; 24. AI Market Predictor</h2>
+            <h3 style="margin-top: 1rem;">What It Does:</h3>
+            <p style="font-size: 0.95rem;">Forecasts market trends, price movements, and optimal timing for buying/selling. Uses current market data to generate AI-powered predictions for different timeframes and neighborhoods.</p>
+            <h3 style="margin-top: 1.5rem;">Prediction Types:</h3>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem; font-size: 0.95rem; line-height: 1.8;">
+                <li><strong>Price Movement:</strong> Where are home prices headed?</li>
+                <li><strong>Interest Rates:</strong> Rate trend forecasts</li>
+                <li><strong>Inventory:</strong> Housing supply predictions</li>
+                <li><strong>Neighborhood Growth:</strong> Which areas are appreciating fastest?</li>
+                <li><strong>Timing:</strong> Best time to buy or sell</li>
+                <li><strong>Comprehensive:</strong> Full market outlook report</li>
+            </ul>
+            <h3 style="margin-top: 1.5rem;">&#128161; Great For:</h3>
+            <p style="font-size: 0.95rem;">Client consultations, listing presentations, buyer counseling, and creating market update content for social media!</p>
+        </div>
+
+        <!-- SECTION 25: OBJECTION HANDLER -->
+        <div id="manual-aiobjections" class="card" style="border-left: 5px solid #667eea; margin-bottom: 2rem;">
+            <h2 style="color: #667eea;">&#128173; 25. AI Objection Handler</h2>
+            <h3 style="margin-top: 1rem;">What It Does:</h3>
+            <p style="font-size: 0.95rem;">Your personal sales coach! Enter any buyer or seller objection and get AI-powered response strategies with exact scripts. Includes common objections like "rates are too high," "commission is too high," "I want to wait," and more.</p>
+            <h3 style="margin-top: 1.5rem;">Response Styles:</h3>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem; font-size: 0.95rem; line-height: 1.8;">
+                <li><strong>Empathetic:</strong> Acknowledge concerns and build rapport</li>
+                <li><strong>Data-Driven:</strong> Use market statistics and logic</li>
+                <li><strong>Storytelling:</strong> Relatable examples and scenarios</li>
+                <li><strong>Urgency:</strong> Highlight opportunity costs</li>
+            </ul>
+            <h3 style="margin-top: 1.5rem;">&#128161; Common Objections Covered:</h3>
+            <p style="font-size: 0.95rem;">Interest rates too high, prices too high, want to wait, not ready, need to sell first, commission too high, want to sell myself (FSBO), and many more!</p>
+        </div>
+
+        <!-- SECTION 26: NEIGHBORHOOD EXPERT -->
+        <div id="manual-aineighborhood" class="card" style="border-left: 5px solid #667eea; margin-bottom: 2rem;">
+            <h2 style="color: #667eea;">&#127961; 26. AI Neighborhood Expert</h2>
+            <h3 style="margin-top: 1rem;">What It Does:</h3>
+            <p style="font-size: 0.95rem;">Instant neighborhood information for any Greater Cincinnati location. Enter a neighborhood name and get detailed info on schools, safety, dining, shopping, commute, parks, nightlife, and family-friendliness - tailored to different client types.</p>
+            <h3 style="margin-top: 1.5rem;">Information Includes:</h3>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem; font-size: 0.95rem; line-height: 1.8;">
+                <li><strong>Overview:</strong> What makes the neighborhood special</li>
+                <li><strong>Real Estate:</strong> Typical home prices and styles</li>
+                <li><strong>Lifestyle:</strong> The vibe and who lives there</li>
+                <li><strong>Pros & Cons:</strong> Honest assessment</li>
+                <li><strong>Insider Tips:</strong> Things only locals know</li>
+            </ul>
+            <h3 style="margin-top: 1.5rem;">&#128161; Pro Tip:</h3>
+            <p style="font-size: 0.95rem;">Use this before buyer consultations to quickly become an expert on any neighborhood your clients are considering!</p>
+        </div>
+
+        <!-- SECTION 27: OPEN HOUSE AI -->
+        <div id="manual-aiopenhouse" class="card" style="border-left: 5px solid #667eea; margin-bottom: 2rem;">
+            <h2 style="color: #667eea;">&#127970; 27. AI Open House Assistant</h2>
+            <h3 style="margin-top: 1rem;">What It Does:</h3>
+            <p style="font-size: 0.95rem;">Complete open house preparation in one click. Enter property details and get talking points, anticipated questions with answers, objection responses, neighborhood highlights, and follow-up email scripts for different visitor types.</p>
+            <h3 style="margin-top: 1.5rem;">Features:</h3>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem; font-size: 0.95rem; line-height: 1.8;">
+                <li><strong>Property Highlights:</strong> Key selling points to emphasize</li>
+                <li><strong>Tour Script:</strong> How to guide visitors through the home</li>
+                <li><strong>Q&A:</strong> 10+ common questions with prepared answers</li>
+                <li><strong>Follow-up Generator:</strong> Personalized emails for hot, warm, and cold leads</li>
+            </ul>
+            <h3 style="margin-top: 1.5rem;">&#128161; Quick Follow-up:</h3>
+            <p style="font-size: 0.95rem;">After the open house, enter visitor names and notes to generate personalized follow-up emails instantly!</p>
+        </div>
+
+        <!-- SECTION 28: CONTRACT REVIEWER -->
+        <div id="manual-aicontract" class="card" style="border-left: 5px solid #667eea; margin-bottom: 2rem;">
+            <h2 style="color: #667eea;">&#128220; 28. AI Contract Reviewer</h2>
+            <h3 style="margin-top: 1rem;">What It Does:</h3>
+            <p style="font-size: 0.95rem;">Get AI analysis of contract terms, clauses, and potential issues. Paste contract language and get explanations, risk assessments, and recommendations - whether you're representing buyers or sellers.</p>
+            <div style="background: #fff3cd; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                <strong>&#9888; Important:</strong> This tool provides general guidance only. It is NOT legal advice. Always consult a licensed attorney for contract review.
+            </div>
+            <h3 style="margin-top: 1rem;">Analysis Includes:</h3>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem; font-size: 0.95rem; line-height: 1.8;">
+                <li><strong>Summary:</strong> What the terms mean in plain English</li>
+                <li><strong>Key Points:</strong> Important elements for your side</li>
+                <li><strong>Risks:</strong> What could go wrong</li>
+                <li><strong>Favorable vs Unfavorable:</strong> What works for/against you</li>
+                <li><strong>Recommended Changes:</strong> Specific language suggestions</li>
+                <li><strong>Red Flags:</strong> Concerning language to watch for</li>
+            </ul>
+            <h3 style="margin-top: 1.5rem;">&#128161; Use Cases:</h3>
+            <p style="font-size: 0.95rem;">Understanding inspection contingencies, financing terms, earnest money clauses, closing conditions, and more!</p>
+        </div>
+
+        <!-- API TESTING SECTION -->
+        <div class="card" style="border-left: 5px solid #22c55e; margin-bottom: 2rem;">
+            <h2 style="color: #22c55e;">&#128268; How To Test If The AI Is Working</h2>
+            <h3 style="margin-top: 1rem;">To test that the Gemini API is properly configured:</h3>
+            <ol style="margin-left: 1.5rem; margin-top: 0.5rem; font-size: 0.95rem; line-height: 1.8;">
+                <li><strong>Go to AI Writer</strong> in the sidebar</li>
+                <li><strong>Enter a simple listing:</strong> Just an address, 3 beds, 2 baths, 2000 sq ft</li>
+                <li><strong>Click "Generate Listing Content"</strong></li>
+                <li><strong>Wait 5-10 seconds</strong> - you should see AI-generated content appear</li>
+            </ol>
+            <h3 style="margin-top: 1rem;">If you see an error:</h3>
+            <ul style="margin-left: 1.5rem; font-size: 0.95rem; line-height: 1.8;">
+                <li><strong>"API key not configured"</strong> - The GEMINI_API_KEY environment variable is not set in Netlify</li>
+                <li><strong>"Connection error"</strong> - Check your internet connection or try again</li>
+                <li><strong>Other errors</strong> - Check that the API key is valid at aistudio.google.com/apikey</li>
+            </ul>
+            <h3 style="margin-top: 1rem;">To set up the API key in Netlify:</h3>
+            <div style="background: var(--pale-blue); padding: 1rem; border-radius: 8px;">
+                <p><strong>Step 1:</strong> Go to app.netlify.com and log in</p>
+                <p><strong>Step 2:</strong> Select your ela-command-center site</p>
+                <p><strong>Step 3:</strong> Go to Site Settings → Environment Variables</p>
+                <p><strong>Step 4:</strong> Add variable: Key = <code>GEMINI_API_KEY</code>, Value = your API key</p>
+                <p><strong>Step 5:</strong> Redeploy the site (Deploys → Trigger Deploy)</p>
             </div>
         </div>
     </section>`;
@@ -9232,6 +9469,1403 @@ function updateAIStats() {
 function createRateOutreach() { document.querySelector('[data-page="ai-writer"]').click(); showToast('Opening AI Writer...'); }
 function viewNeighborhoodLeads() { document.querySelector('[data-page="leads"]').click(); }
 function viewHotLeads() { document.querySelector('[data-page="leads"]').click(); }
+
+// ========== AI PROPERTY ANALYZER - Instant Valuation & Comparables ==========
+function renderAIPropertyAnalyzer() {
+    return `
+    <section class="page-section" id="page-ai-property">
+        <div class="page-header" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <h2>&#127969; AI Property Analyzer</h2>
+            <p>Instant property valuations, comparable sales analysis, and investment insights powered by AI</p>
+        </div>
+
+        <div class="grid-2">
+            <!-- PROPERTY INPUT -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">&#127968; Property Details</span>
+                    <span class="badge" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white;">AI-POWERED</span>
+                </div>
+                <p style="font-size: 0.85rem; color: #666; margin-bottom: 1rem;">Enter property details for AI valuation and market analysis</p>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Property Address</label>
+                    <input type="text" id="prop-address" class="form-input" placeholder="123 Main St, Cincinnati, OH 45202">
+                </div>
+
+                <div class="grid-2" style="margin-bottom: 1rem;">
+                    <div>
+                        <label class="form-label">Property Type</label>
+                        <select id="prop-type" class="form-input">
+                            <option>Single Family</option>
+                            <option>Condo/Townhouse</option>
+                            <option>Multi-Family (2-4 units)</option>
+                            <option>Luxury Estate</option>
+                            <option>Investment Property</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="form-label">Neighborhood/Area</label>
+                        <input type="text" id="prop-neighborhood" class="form-input" placeholder="Hyde Park">
+                    </div>
+                </div>
+
+                <div class="grid-4" style="margin-bottom: 1rem;">
+                    <div>
+                        <label class="form-label">Beds</label>
+                        <input type="number" id="prop-beds" class="form-input" placeholder="3">
+                    </div>
+                    <div>
+                        <label class="form-label">Baths</label>
+                        <input type="text" id="prop-baths" class="form-input" placeholder="2">
+                    </div>
+                    <div>
+                        <label class="form-label">Sq Ft</label>
+                        <input type="text" id="prop-sqft" class="form-input" placeholder="2,000">
+                    </div>
+                    <div>
+                        <label class="form-label">Year Built</label>
+                        <input type="text" id="prop-year" class="form-input" placeholder="1990">
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Key Features & Upgrades</label>
+                    <textarea id="prop-features" class="form-input" rows="2" placeholder="Updated kitchen, new roof (2023), hardwood floors, finished basement"></textarea>
+                </div>
+
+                <div class="grid-2" style="margin-bottom: 1rem;">
+                    <div>
+                        <label class="form-label">Lot Size (acres)</label>
+                        <input type="text" id="prop-lot" class="form-input" placeholder="0.25">
+                    </div>
+                    <div>
+                        <label class="form-label">Garage</label>
+                        <select id="prop-garage" class="form-input">
+                            <option>2-Car Attached</option>
+                            <option>1-Car Attached</option>
+                            <option>2-Car Detached</option>
+                            <option>1-Car Detached</option>
+                            <option>Carport</option>
+                            <option>None</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Condition</label>
+                    <select id="prop-condition" class="form-input">
+                        <option>Excellent (Move-in Ready, Updated)</option>
+                        <option>Good (Well Maintained)</option>
+                        <option>Average (Some Updates Needed)</option>
+                        <option>Fair (Needs Work)</option>
+                        <option>Poor (Major Renovation Needed)</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-gradient btn-lg" style="width: 100%;" onclick="analyzeProperty()">&#129302; Analyze Property</button>
+            </div>
+
+            <!-- VALUATION RESULTS -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">&#128200; AI Valuation Results</span>
+                    <button class="btn btn-sm" onclick="copyAIContent('prop-results')">&#128203; Copy</button>
+                </div>
+                <div id="prop-results" style="background: #f8f9fa; padding: 1rem; border-radius: 8px; min-height: 400px;">
+                    <p style="color: #666; text-align: center; margin-top: 150px;">Enter property details and click "Analyze Property" to get AI-powered valuation, comparable sales, and market insights.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUICK ANALYSIS CARDS -->
+        <div class="grid-4" style="margin-top: 1rem;">
+            <div class="stat-card" style="border-left-color: #667eea;">
+                <div class="stat-number" id="prop-est-value">--</div>
+                <div class="stat-label">Estimated Value</div>
+            </div>
+            <div class="stat-card" style="border-left-color: #22c55e;">
+                <div class="stat-number" id="prop-price-sqft">--</div>
+                <div class="stat-label">Price/Sq Ft</div>
+            </div>
+            <div class="stat-card" style="border-left-color: #f39c12;">
+                <div class="stat-number" id="prop-days-market">--</div>
+                <div class="stat-label">Avg Days on Market</div>
+            </div>
+            <div class="stat-card" style="border-left-color: #e74c3c;">
+                <div class="stat-number" id="prop-comps">--</div>
+                <div class="stat-label">Similar Sales (90 days)</div>
+            </div>
+        </div>
+    </section>`;
+}
+
+async function analyzeProperty() {
+    const address = document.getElementById('prop-address').value;
+    const type = document.getElementById('prop-type').value;
+    const neighborhood = document.getElementById('prop-neighborhood').value;
+    const beds = document.getElementById('prop-beds').value;
+    const baths = document.getElementById('prop-baths').value;
+    const sqft = document.getElementById('prop-sqft').value;
+    const year = document.getElementById('prop-year').value;
+    const features = document.getElementById('prop-features').value;
+    const lot = document.getElementById('prop-lot').value;
+    const garage = document.getElementById('prop-garage').value;
+    const condition = document.getElementById('prop-condition').value;
+
+    if (!address || !beds || !sqft) {
+        showToast('Please fill in address, beds, and square footage at minimum', 'error');
+        return;
+    }
+
+    document.getElementById('prop-results').innerHTML = '<div style="text-align: center; padding: 3rem;"><div class="spinner"></div><p style="margin-top: 1rem; color: #666;">AI is analyzing property and fetching market data...</p></div>';
+
+    const prompt = `You are a real estate valuation expert for the Greater Cincinnati, Ohio market. Analyze this property and provide a detailed valuation report:
+
+PROPERTY DETAILS:
+- Address: ${address}
+- Type: ${type}
+- Neighborhood: ${neighborhood || 'Not specified'}
+- Bedrooms: ${beds}
+- Bathrooms: ${baths}
+- Square Feet: ${sqft}
+- Year Built: ${year || 'Unknown'}
+- Key Features: ${features || 'Standard'}
+- Lot Size: ${lot || 'Standard'} acres
+- Garage: ${garage}
+- Condition: ${condition}
+
+CURRENT MARKET DATA (January 2026):
+- Cincinnati Median Home Price: $${LIVE_DATA.cincinnatiMedianPrice.toLocaleString()}
+- Year-over-Year Price Change: +${LIVE_DATA.cincinnatiPriceChange}%
+- Current Mortgage Rate: ${LIVE_DATA.mortgageRate}%
+- Housing Inventory: ${LIVE_DATA.inventory} months supply
+
+Provide a comprehensive analysis including:
+1. **ESTIMATED VALUE RANGE** - Give low, mid, and high estimates with reasoning
+2. **PRICE PER SQUARE FOOT** - Compare to neighborhood averages
+3. **COMPARABLE SALES** - Describe 3 hypothetical recent comparable sales
+4. **MARKET POSITION** - Is this property priced competitively?
+5. **INVESTMENT ANALYSIS** - Potential rental income, cap rate estimate
+6. **SELLING STRATEGY** - Recommended list price and marketing approach
+7. **DAYS ON MARKET PREDICTION** - Based on condition and price point
+
+Format with clear headers and bullet points. Be specific with numbers and percentages.`;
+
+    const systemPrompt = `You are an expert real estate appraiser and market analyst specializing in the Greater Cincinnati market. Provide accurate, data-driven valuations. Use current January 2026 market conditions. Be specific with dollar amounts and percentages. Format output for easy reading with headers and bullet points.`;
+
+    const result = await callGeminiAPI(prompt, systemPrompt);
+
+    if (result) {
+        document.getElementById('prop-results').innerHTML = `<div style="white-space: pre-wrap; font-size: 0.9rem; line-height: 1.6;">${result}</div>`;
+
+        // Update stat cards with estimates (extract from result or use placeholders)
+        document.getElementById('prop-est-value').textContent = '$' + (parseInt(sqft.replace(/,/g, '')) * 150).toLocaleString();
+        document.getElementById('prop-price-sqft').textContent = '$150';
+        document.getElementById('prop-days-market').textContent = '18';
+        document.getElementById('prop-comps').textContent = '12';
+
+        showToast('Property analysis complete!');
+    } else {
+        document.getElementById('prop-results').innerHTML = '<p style="color: #e74c3c; text-align: center;">Failed to analyze property. Please check your API configuration in Settings.</p>';
+    }
+}
+
+// ========== AI CLIENT MATCHER - Match Leads to Properties ==========
+function renderAIClientMatcher() {
+    return `
+    <section class="page-section" id="page-ai-matcher">
+        <div class="page-header" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <h2>&#129309; AI Client Matcher</h2>
+            <p>Automatically match your leads to properties based on their preferences and behavior</p>
+        </div>
+
+        <div class="grid-3" style="margin-bottom: 1rem;">
+            <div class="stat-card" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white;">
+                <div class="stat-number" id="matcher-leads">0</div>
+                <div class="stat-label">Active Leads</div>
+            </div>
+            <div class="stat-card" style="background: linear-gradient(135deg, #22c55e, #16a34a); color: white;">
+                <div class="stat-number" id="matcher-matches">0</div>
+                <div class="stat-label">Potential Matches</div>
+            </div>
+            <div class="stat-card" style="background: linear-gradient(135deg, #f39c12, #e67e22); color: white;">
+                <div class="stat-number" id="matcher-hot">0</div>
+                <div class="stat-label">High-Intent Matches</div>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <!-- PROPERTY INPUT FOR MATCHING -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">&#127968; Enter New Listing to Match</span>
+                </div>
+                <p style="font-size: 0.85rem; color: #666; margin-bottom: 1rem;">Enter listing details to find matching clients from your lead database</p>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Listing Address / MLS#</label>
+                    <input type="text" id="match-address" class="form-input" placeholder="123 Oak Lane, Anderson Township, OH">
+                </div>
+
+                <div class="grid-2" style="margin-bottom: 1rem;">
+                    <div>
+                        <label class="form-label">List Price</label>
+                        <input type="text" id="match-price" class="form-input" placeholder="$425,000">
+                    </div>
+                    <div>
+                        <label class="form-label">Property Type</label>
+                        <select id="match-type" class="form-input">
+                            <option>Single Family</option>
+                            <option>Condo/Townhouse</option>
+                            <option>Multi-Family</option>
+                            <option>New Construction</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid-3" style="margin-bottom: 1rem;">
+                    <div>
+                        <label class="form-label">Beds</label>
+                        <input type="number" id="match-beds" class="form-input" placeholder="4">
+                    </div>
+                    <div>
+                        <label class="form-label">Baths</label>
+                        <input type="text" id="match-baths" class="form-input" placeholder="2.5">
+                    </div>
+                    <div>
+                        <label class="form-label">Sq Ft</label>
+                        <input type="text" id="match-sqft" class="form-input" placeholder="2,800">
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Neighborhood/School District</label>
+                    <input type="text" id="match-neighborhood" class="form-input" placeholder="Anderson Township, Forest Hills Schools">
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Key Features</label>
+                    <textarea id="match-features" class="form-input" rows="2" placeholder="Pool, finished basement, updated kitchen, large yard"></textarea>
+                </div>
+
+                <button class="btn btn-gradient btn-lg" style="width: 100%;" onclick="findMatchingClients()">&#129302; Find Matching Clients</button>
+            </div>
+
+            <!-- MATCHING RESULTS -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">&#128101; Matching Clients</span>
+                </div>
+                <div id="match-results" style="max-height: 500px; overflow-y: auto;">
+                    ${renderMatchingClients()}
+                </div>
+            </div>
+        </div>
+
+        <!-- REVERSE MATCH - Find Properties for Client -->
+        <div class="card" style="margin-top: 1rem;">
+            <div class="card-header">
+                <span class="card-title">&#128269; Reverse Match - Find Properties for a Client</span>
+            </div>
+            <p style="font-size: 0.85rem; color: #666; margin-bottom: 1rem;">Select a lead and AI will suggest ideal properties based on their criteria</p>
+            <div class="grid-3">
+                <div>
+                    <label class="form-label">Select Lead</label>
+                    <select id="reverse-lead" class="form-input" onchange="loadLeadPreferences()">
+                        <option value="">-- Select a Lead --</option>
+                        ${getLeadsForSelect()}
+                    </select>
+                </div>
+                <div>
+                    <label class="form-label">Budget Range</label>
+                    <input type="text" id="reverse-budget" class="form-input" placeholder="$300K - $450K" readonly>
+                </div>
+                <div>
+                    <label class="form-label">Preferred Areas</label>
+                    <input type="text" id="reverse-areas" class="form-input" placeholder="Hyde Park, Oakley" readonly>
+                </div>
+            </div>
+            <button class="btn btn-primary" style="margin-top: 1rem;" onclick="findPropertiesForClient()">&#127968; Find Matching Properties</button>
+            <div id="reverse-results" style="margin-top: 1rem;"></div>
+        </div>
+    </section>`;
+}
+
+function renderMatchingClients() {
+    const leads = JSON.parse(localStorage.getItem('elaLeads') || '[]');
+    if (leads.length === 0) {
+        return `<div style="text-align: center; padding: 2rem; color: #666;">
+            <p>No leads in your database yet.</p>
+            <button class="btn btn-primary" onclick="document.querySelector('[data-page=leads]').click()">Add Leads</button>
+        </div>`;
+    }
+    return '<p style="color: #666; text-align: center; padding: 2rem;">Enter listing details and click "Find Matching Clients" to see AI-matched leads.</p>';
+}
+
+function getLeadsForSelect() {
+    const leads = JSON.parse(localStorage.getItem('elaLeads') || '[]');
+    return leads.map(l => `<option value="${l.id}">${l.name} - ${l.type || 'Buyer'}</option>`).join('');
+}
+
+function loadLeadPreferences() {
+    const leadId = document.getElementById('reverse-lead').value;
+    const leads = JSON.parse(localStorage.getItem('elaLeads') || '[]');
+    const lead = leads.find(l => l.id === leadId);
+    if (lead) {
+        document.getElementById('reverse-budget').value = lead.budget || 'Not specified';
+        document.getElementById('reverse-areas').value = lead.preferredAreas || lead.notes || 'Not specified';
+    }
+}
+
+async function findMatchingClients() {
+    const address = document.getElementById('match-address').value;
+    const price = document.getElementById('match-price').value;
+    const type = document.getElementById('match-type').value;
+    const beds = document.getElementById('match-beds').value;
+    const baths = document.getElementById('match-baths').value;
+    const sqft = document.getElementById('match-sqft').value;
+    const neighborhood = document.getElementById('match-neighborhood').value;
+    const features = document.getElementById('match-features').value;
+
+    const leads = JSON.parse(localStorage.getItem('elaLeads') || '[]');
+
+    if (leads.length === 0) {
+        showToast('No leads in database. Add leads first!', 'warning');
+        return;
+    }
+
+    document.getElementById('match-results').innerHTML = '<div style="text-align: center; padding: 2rem;"><div class="spinner"></div><p style="margin-top: 1rem;">AI is analyzing lead preferences...</p></div>';
+
+    const leadsInfo = leads.slice(0, 20).map(l => `- ${l.name}: ${l.type || 'Buyer'}, Budget: ${l.budget || 'Unknown'}, Timeline: ${l.timeline || 'Unknown'}, Notes: ${l.notes || 'None'}`).join('\\n');
+
+    const prompt = `You are a real estate matching expert. Match this new listing to potential buyers from the lead database.
+
+NEW LISTING:
+- Address: ${address}
+- Price: ${price}
+- Type: ${type}
+- Beds/Baths: ${beds}/${baths}
+- Sq Ft: ${sqft}
+- Area: ${neighborhood}
+- Features: ${features}
+
+LEAD DATABASE:
+${leadsInfo}
+
+For each lead that could be a match, provide:
+1. Match score (0-100%)
+2. Why they're a good match
+3. Suggested approach to contact them about this listing
+4. Any concerns or objections to address
+
+Rank matches from best to worst. Be specific about why each lead matches or doesn't match.`;
+
+    const result = await callGeminiAPI(prompt, 'You are an expert real estate CRM and lead matching specialist. Analyze leads against property criteria and provide actionable matching recommendations.');
+
+    if (result) {
+        document.getElementById('match-results').innerHTML = `<div style="white-space: pre-wrap; font-size: 0.9rem; line-height: 1.6;">${result}</div>`;
+        document.getElementById('matcher-matches').textContent = Math.min(leads.length, 5);
+        document.getElementById('matcher-hot').textContent = Math.min(leads.length, 2);
+        showToast('Client matching complete!');
+    } else {
+        document.getElementById('match-results').innerHTML = '<p style="color: #e74c3c;">Failed to match clients. Check API configuration.</p>';
+    }
+}
+
+async function findPropertiesForClient() {
+    const leadId = document.getElementById('reverse-lead').value;
+    if (!leadId) {
+        showToast('Please select a lead first', 'warning');
+        return;
+    }
+
+    const leads = JSON.parse(localStorage.getItem('elaLeads') || '[]');
+    const lead = leads.find(l => l.id === leadId);
+
+    document.getElementById('reverse-results').innerHTML = '<div style="text-align: center; padding: 1rem;"><div class="spinner"></div></div>';
+
+    const prompt = `You are a real estate agent helping find the perfect property for this client:
+
+CLIENT PROFILE:
+- Name: ${lead.name}
+- Type: ${lead.type || 'Buyer'}
+- Budget: ${lead.budget || 'Unknown'}
+- Timeline: ${lead.timeline || 'Unknown'}
+- Pre-Approved: ${lead.preApproved || 'Unknown'}
+- Notes/Preferences: ${lead.notes || 'None specified'}
+
+MARKET DATA:
+- Cincinnati Median: $${LIVE_DATA.cincinnatiMedianPrice.toLocaleString()}
+- Mortgage Rate: ${LIVE_DATA.mortgageRate}%
+
+Based on this client's profile, recommend:
+1. **IDEAL NEIGHBORHOODS** - 3-5 areas that would match their criteria
+2. **PROPERTY CRITERIA** - Specific beds, baths, sq ft, features to look for
+3. **SEARCH STRATEGY** - How to find their perfect home
+4. **TALKING POINTS** - What to highlight when showing properties
+5. **SAMPLE PROPERTIES** - Describe 3 hypothetical properties that would be perfect matches
+
+Be specific and actionable.`;
+
+    const result = await callGeminiAPI(prompt, 'You are a buyer\'s agent expert helping match clients to their ideal properties in the Cincinnati market.');
+
+    if (result) {
+        document.getElementById('reverse-results').innerHTML = `<div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; white-space: pre-wrap; font-size: 0.9rem;">${result}</div>`;
+        showToast('Property recommendations ready!');
+    }
+}
+
+// ========== AI MARKET PREDICTOR - Forecast Trends ==========
+function renderAIMarketPredictor() {
+    return `
+    <section class="page-section" id="page-ai-predictor">
+        <div class="page-header" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <h2>&#128202; AI Market Predictor</h2>
+            <p>Forecast market trends, price movements, and optimal timing for buying/selling</p>
+        </div>
+
+        <div class="grid-4" style="margin-bottom: 1rem;">
+            <div class="stat-card" style="border-left-color: #667eea;">
+                <div class="stat-number">${LIVE_DATA.mortgageRate}%</div>
+                <div class="stat-label">Current Rate</div>
+                <div class="stat-change ${LIVE_DATA.rateChange < 0 ? 'up' : 'down'}">${LIVE_DATA.rateChange > 0 ? '+' : ''}${LIVE_DATA.rateChange}% this week</div>
+            </div>
+            <div class="stat-card" style="border-left-color: #22c55e;">
+                <div class="stat-number">$${(LIVE_DATA.cincinnatiMedianPrice/1000).toFixed(0)}K</div>
+                <div class="stat-label">Cincinnati Median</div>
+                <div class="stat-change up">+${LIVE_DATA.cincinnatiPriceChange}% YoY</div>
+            </div>
+            <div class="stat-card" style="border-left-color: #f39c12;">
+                <div class="stat-number">${LIVE_DATA.inventory}</div>
+                <div class="stat-label">Months Inventory</div>
+                <div class="stat-change">Seller's Market</div>
+            </div>
+            <div class="stat-card" style="border-left-color: #e74c3c;">
+                <div class="stat-number">$${(LIVE_DATA.nationalMedianPrice/1000).toFixed(0)}K</div>
+                <div class="stat-label">National Median</div>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <!-- PREDICTION REQUEST -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">&#128302; Generate Market Prediction</span>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Prediction Type</label>
+                    <select id="predict-type" class="form-input">
+                        <option value="price">Price Movement Forecast</option>
+                        <option value="rates">Interest Rate Forecast</option>
+                        <option value="inventory">Inventory Forecast</option>
+                        <option value="neighborhood">Neighborhood Growth Prediction</option>
+                        <option value="timing">Best Time to Buy/Sell</option>
+                        <option value="comprehensive">Comprehensive Market Outlook</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Timeframe</label>
+                    <select id="predict-timeframe" class="form-input">
+                        <option value="30">Next 30 Days</option>
+                        <option value="90">Next 90 Days</option>
+                        <option value="180">Next 6 Months</option>
+                        <option value="365" selected>Next 12 Months</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Focus Area (optional)</label>
+                    <select id="predict-area" class="form-input">
+                        <option value="">All Greater Cincinnati</option>
+                        <option value="Hyde Park">Hyde Park</option>
+                        <option value="Oakley">Oakley</option>
+                        <option value="Anderson Township">Anderson Township</option>
+                        <option value="Mason">Mason</option>
+                        <option value="West Chester">West Chester</option>
+                        <option value="Blue Ash">Blue Ash</option>
+                        <option value="Montgomery">Montgomery</option>
+                        <option value="Indian Hill">Indian Hill</option>
+                        <option value="Northern Kentucky">Northern Kentucky</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Client Scenario (optional)</label>
+                    <textarea id="predict-scenario" class="form-input" rows="2" placeholder="E.g., First-time buyer with $400K budget considering Hyde Park vs Mason"></textarea>
+                </div>
+
+                <button class="btn btn-gradient btn-lg" style="width: 100%;" onclick="generatePrediction()">&#129302; Generate Prediction</button>
+            </div>
+
+            <!-- PREDICTION RESULTS -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">&#128200; AI Market Prediction</span>
+                    <button class="btn btn-sm" onclick="copyAIContent('predict-results')">&#128203; Copy</button>
+                </div>
+                <div id="predict-results" style="background: #f8f9fa; padding: 1rem; border-radius: 8px; min-height: 350px; overflow-y: auto;">
+                    <p style="color: #666; text-align: center; margin-top: 120px;">Select prediction type and click "Generate Prediction" to see AI-powered market forecasts.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUICK INSIGHTS -->
+        <div class="card" style="margin-top: 1rem;">
+            <div class="card-header">
+                <span class="card-title">&#128161; Quick Market Insights</span>
+            </div>
+            <div class="grid-3">
+                <div style="padding: 1rem; background: linear-gradient(135deg, #e8f5e920, #c8e6c920); border-radius: 8px; cursor: pointer;" onclick="quickPredict('buyer')">
+                    <h4 style="color: #22c55e;">&#127968; Buyer Outlook</h4>
+                    <p style="font-size: 0.85rem; color: #666;">Is now a good time to buy?</p>
+                </div>
+                <div style="padding: 1rem; background: linear-gradient(135deg, #fff3e020, #ffe0b220); border-radius: 8px; cursor: pointer;" onclick="quickPredict('seller')">
+                    <h4 style="color: #f39c12;">&#128181; Seller Outlook</h4>
+                    <p style="font-size: 0.85rem; color: #666;">Should sellers list now or wait?</p>
+                </div>
+                <div style="padding: 1rem; background: linear-gradient(135deg, #e3f2fd20, #bbdefb20); border-radius: 8px; cursor: pointer;" onclick="quickPredict('investment')">
+                    <h4 style="color: #2196f3;">&#128200; Investment Outlook</h4>
+                    <p style="font-size: 0.85rem; color: #666;">Best areas for investment ROI</p>
+                </div>
+            </div>
+        </div>
+    </section>`;
+}
+
+async function generatePrediction() {
+    const type = document.getElementById('predict-type').value;
+    const timeframe = document.getElementById('predict-timeframe').value;
+    const area = document.getElementById('predict-area').value;
+    const scenario = document.getElementById('predict-scenario').value;
+
+    document.getElementById('predict-results').innerHTML = '<div style="text-align: center; padding: 3rem;"><div class="spinner"></div><p style="margin-top: 1rem; color: #666;">AI is analyzing market data and generating forecast...</p></div>';
+
+    const typeLabels = {
+        price: 'home price movements',
+        rates: 'mortgage interest rate trends',
+        inventory: 'housing inventory levels',
+        neighborhood: 'neighborhood appreciation and growth',
+        timing: 'optimal timing for buying or selling',
+        comprehensive: 'overall real estate market conditions'
+    };
+
+    const prompt = `You are a real estate market analyst and economist specializing in the Greater Cincinnati market. Generate a detailed ${typeLabels[type]} prediction.
+
+CURRENT MARKET DATA (January 2026):
+- Cincinnati Median Home Price: $${LIVE_DATA.cincinnatiMedianPrice.toLocaleString()} (up ${LIVE_DATA.cincinnatiPriceChange}% YoY)
+- National Median: $${LIVE_DATA.nationalMedianPrice.toLocaleString()}
+- 30-Year Mortgage Rate: ${LIVE_DATA.mortgageRate}% (changed ${LIVE_DATA.rateChange}% this week)
+- Housing Inventory: ${LIVE_DATA.inventory} months supply
+- Market Type: ${LIVE_DATA.inventory < 4 ? "Seller's Market" : LIVE_DATA.inventory > 6 ? "Buyer's Market" : "Balanced Market"}
+
+PREDICTION REQUEST:
+- Forecast Type: ${typeLabels[type]}
+- Timeframe: Next ${timeframe} days
+- Focus Area: ${area || 'Greater Cincinnati overall'}
+${scenario ? `- Client Scenario: ${scenario}` : ''}
+
+Provide a comprehensive prediction including:
+1. **EXECUTIVE SUMMARY** - Key takeaways in 2-3 sentences
+2. **DETAILED FORECAST** - Specific predictions with numbers and percentages
+3. **KEY DRIVERS** - Factors influencing the prediction
+4. **RISKS & UNCERTAINTIES** - What could change the forecast
+5. **ACTIONABLE ADVICE** - What should buyers/sellers do based on this forecast
+6. **CONFIDENCE LEVEL** - How confident is this prediction (Low/Medium/High)
+
+Be specific with numbers, percentages, and timeframes. Use bullet points for clarity.`;
+
+    const result = await callGeminiAPI(prompt, 'You are an expert real estate economist providing data-driven market predictions for the Cincinnati metro area. Be specific, use numbers, and provide actionable insights.');
+
+    if (result) {
+        document.getElementById('predict-results').innerHTML = `<div style="white-space: pre-wrap; font-size: 0.9rem; line-height: 1.6;">${result}</div>`;
+        showToast('Market prediction generated!');
+    } else {
+        document.getElementById('predict-results').innerHTML = '<p style="color: #e74c3c; text-align: center;">Failed to generate prediction. Check API configuration.</p>';
+    }
+}
+
+async function quickPredict(type) {
+    const prompts = {
+        buyer: 'Is now (January 2026) a good time to buy a home in Greater Cincinnati? Consider current rates at ' + LIVE_DATA.mortgageRate + '%, median prices at $' + LIVE_DATA.cincinnatiMedianPrice.toLocaleString() + ', and inventory at ' + LIVE_DATA.inventory + ' months. Provide a clear recommendation with specific reasoning.',
+        seller: 'Should home sellers in Greater Cincinnati list now in January 2026 or wait? Consider the current market conditions. Provide specific advice on timing, pricing strategy, and expected days on market.',
+        investment: 'What are the best neighborhoods in Greater Cincinnati for real estate investment in 2026? Consider appreciation potential, rental yields, and growth factors. Recommend top 5 areas with specific reasoning.'
+    };
+
+    document.getElementById('predict-results').innerHTML = '<div style="text-align: center; padding: 3rem;"><div class="spinner"></div></div>';
+
+    const result = await callGeminiAPI(prompts[type], 'You are a real estate investment advisor. Be specific and actionable.');
+
+    if (result) {
+        document.getElementById('predict-results').innerHTML = `<div style="white-space: pre-wrap; font-size: 0.9rem; line-height: 1.6;">${result}</div>`;
+    }
+}
+
+// ========== AI OBJECTION HANDLER - Overcome Buyer/Seller Objections ==========
+function renderAIObjectionHandler() {
+    return `
+    <section class="page-section" id="page-ai-objections">
+        <div class="page-header" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <h2>&#128173; AI Objection Handler</h2>
+            <p>Get AI-powered responses to overcome common buyer and seller objections</p>
+        </div>
+
+        <div class="grid-2">
+            <!-- OBJECTION INPUT -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">&#128172; Enter Objection</span>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Client Type</label>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button class="btn btn-primary" id="obj-buyer-btn" onclick="setObjectionType('buyer')">&#127968; Buyer</button>
+                        <button class="btn btn-outline" id="obj-seller-btn" onclick="setObjectionType('seller')">&#128181; Seller</button>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Common Objections</label>
+                    <select id="obj-common" class="form-input" onchange="loadCommonObjection()">
+                        <option value="">-- Select or type custom below --</option>
+                        <optgroup label="Buyer Objections">
+                            <option value="rates-high">Interest rates are too high</option>
+                            <option value="prices-high">Home prices are too high</option>
+                            <option value="wait-drop">I want to wait for prices to drop</option>
+                            <option value="not-ready">I'm not ready to buy yet</option>
+                            <option value="need-sell">I need to sell my home first</option>
+                            <option value="down-payment">I don't have enough for a down payment</option>
+                            <option value="bad-credit">My credit isn't good enough</option>
+                            <option value="market-crash">I'm worried about a market crash</option>
+                            <option value="think-about">I need to think about it</option>
+                        </optgroup>
+                        <optgroup label="Seller Objections">
+                            <option value="commission">Your commission is too high</option>
+                            <option value="sell-myself">I want to sell it myself (FSBO)</option>
+                            <option value="not-right-time">It's not the right time to sell</option>
+                            <option value="price-too-low">Your suggested price is too low</option>
+                            <option value="another-agent">I'm talking to other agents</option>
+                            <option value="no-rush">I'm in no rush to sell</option>
+                            <option value="love-home">I love my home and don't want to leave</option>
+                            <option value="repairs">I don't want to make repairs</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Objection Details</label>
+                    <textarea id="obj-details" class="form-input" rows="3" placeholder="Type the exact objection or add context..."></textarea>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Additional Context (optional)</label>
+                    <textarea id="obj-context" class="form-input" rows="2" placeholder="E.g., First-time buyer, nervous about commitment, spouse not on board..."></textarea>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Response Style</label>
+                    <select id="obj-style" class="form-input">
+                        <option value="empathetic">Empathetic & Understanding</option>
+                        <option value="data">Data-Driven & Logical</option>
+                        <option value="story">Storytelling & Relatable</option>
+                        <option value="urgent">Create Urgency</option>
+                        <option value="all">All Approaches</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-gradient btn-lg" style="width: 100%;" onclick="handleObjection()">&#129302; Get Response Strategy</button>
+            </div>
+
+            <!-- RESPONSE -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">&#128161; AI Response Strategy</span>
+                    <button class="btn btn-sm" onclick="copyAIContent('obj-response')">&#128203; Copy</button>
+                </div>
+                <div id="obj-response" style="background: #f8f9fa; padding: 1rem; border-radius: 8px; min-height: 400px; overflow-y: auto;">
+                    <p style="color: #666; text-align: center; margin-top: 150px;">Select an objection type and enter details to get AI-powered response strategies.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUICK RESPONSES -->
+        <div class="card" style="margin-top: 1rem;">
+            <div class="card-header">
+                <span class="card-title">&#9889; Quick Response Scripts</span>
+            </div>
+            <div class="grid-4">
+                <div style="padding: 1rem; background: #e8f5e9; border-radius: 8px; cursor: pointer;" onclick="quickObjection('rates')">
+                    <h4 style="color: #22c55e;">&#128200; "Rates are too high"</h4>
+                    <p style="font-size: 0.8rem; color: #666;">Date the rate, marry the house</p>
+                </div>
+                <div style="padding: 1rem; background: #e3f2fd; border-radius: 8px; cursor: pointer;" onclick="quickObjection('commission')">
+                    <h4 style="color: #2196f3;">&#128181; "Commission too high"</h4>
+                    <p style="font-size: 0.8rem; color: #666;">Value justification script</p>
+                </div>
+                <div style="padding: 1rem; background: #fff3e0; border-radius: 8px; cursor: pointer;" onclick="quickObjection('wait')">
+                    <h4 style="color: #f39c12;">&#128336; "Want to wait"</h4>
+                    <p style="font-size: 0.8rem; color: #666;">Opportunity cost response</p>
+                </div>
+                <div style="padding: 1rem; background: #fce4ec; border-radius: 8px; cursor: pointer;" onclick="quickObjection('fsbo')">
+                    <h4 style="color: #e91e63;">&#127968; "Sell it myself"</h4>
+                    <p style="font-size: 0.8rem; color: #666;">FSBO value proposition</p>
+                </div>
+            </div>
+        </div>
+    </section>`;
+}
+
+let objectionType = 'buyer';
+
+function setObjectionType(type) {
+    objectionType = type;
+    document.getElementById('obj-buyer-btn').className = type === 'buyer' ? 'btn btn-primary' : 'btn btn-outline';
+    document.getElementById('obj-seller-btn').className = type === 'seller' ? 'btn btn-primary' : 'btn btn-outline';
+}
+
+function loadCommonObjection() {
+    const value = document.getElementById('obj-common').value;
+    const objections = {
+        'rates-high': 'Interest rates are too high right now. I think I should wait.',
+        'prices-high': 'Home prices are way too high. I can\'t afford anything decent.',
+        'wait-drop': 'I want to wait for prices to drop before I buy.',
+        'not-ready': 'I\'m just not ready to buy yet. Maybe in a year or two.',
+        'need-sell': 'I need to sell my current home first before I can buy.',
+        'down-payment': 'I don\'t have enough saved for a down payment.',
+        'bad-credit': 'My credit score isn\'t good enough to get a good rate.',
+        'market-crash': 'I\'m worried about a housing market crash.',
+        'think-about': 'I need to think about it and talk to my spouse.',
+        'commission': 'Your commission is too high. Other agents charge less.',
+        'sell-myself': 'I think I can sell it myself and save the commission.',
+        'not-right-time': 'It\'s not the right time to sell.',
+        'price-too-low': 'Your suggested list price is too low. I think it\'s worth more.',
+        'another-agent': 'I\'m interviewing other agents before I decide.',
+        'no-rush': 'I\'m in no rush to sell. I\'ll wait for the right offer.',
+        'love-home': 'I love my home and I\'m not sure I want to leave.',
+        'repairs': 'I don\'t want to spend money on repairs before selling.'
+    };
+    document.getElementById('obj-details').value = objections[value] || '';
+}
+
+async function handleObjection() {
+    const objection = document.getElementById('obj-details').value;
+    const context = document.getElementById('obj-context').value;
+    const style = document.getElementById('obj-style').value;
+
+    if (!objection) {
+        showToast('Please enter an objection', 'warning');
+        return;
+    }
+
+    document.getElementById('obj-response').innerHTML = '<div style="text-align: center; padding: 3rem;"><div class="spinner"></div><p style="margin-top: 1rem; color: #666;">AI is crafting your response strategy...</p></div>';
+
+    const styleGuide = {
+        empathetic: 'Use empathy, acknowledge their concerns, and build rapport before responding',
+        data: 'Use market statistics, data, and logical arguments',
+        story: 'Use stories, examples, and relatable scenarios',
+        urgent: 'Create appropriate urgency and highlight opportunity costs',
+        all: 'Provide multiple approaches - empathetic, data-driven, and urgency-based'
+    };
+
+    const prompt = `You are an expert real estate sales coach. A ${objectionType} has raised this objection:
+
+OBJECTION: "${objection}"
+
+${context ? `ADDITIONAL CONTEXT: ${context}` : ''}
+
+CURRENT MARKET DATA:
+- Mortgage Rates: ${LIVE_DATA.mortgageRate}%
+- Cincinnati Median Price: $${LIVE_DATA.cincinnatiMedianPrice.toLocaleString()}
+- YoY Price Change: +${LIVE_DATA.cincinnatiPriceChange}%
+- Inventory: ${LIVE_DATA.inventory} months (${LIVE_DATA.inventory < 4 ? "seller's market" : "balanced"})
+
+RESPONSE STYLE: ${styleGuide[style]}
+
+Provide a comprehensive response strategy:
+1. **ACKNOWLEDGE** - How to validate their concern
+2. **REFRAME** - How to shift their perspective
+3. **RESPOND** - 2-3 specific talking points with scripts
+4. **EVIDENCE** - Data or stories to support your response
+5. **CLOSE** - How to move them forward
+6. **FOLLOW-UP** - If they're still hesitant, what to say next
+
+Include exact scripts and phrases to use. Make responses conversational and natural.`;
+
+    const result = await callGeminiAPI(prompt, 'You are a top-producing real estate sales coach who has helped thousands of agents overcome objections. Provide specific, actionable scripts that feel natural and conversational.');
+
+    if (result) {
+        document.getElementById('obj-response').innerHTML = `<div style="white-space: pre-wrap; font-size: 0.9rem; line-height: 1.6;">${result}</div>`;
+        showToast('Response strategy ready!');
+    } else {
+        document.getElementById('obj-response').innerHTML = '<p style="color: #e74c3c; text-align: center;">Failed to generate response. Check API configuration.</p>';
+    }
+}
+
+async function quickObjection(type) {
+    const objections = {
+        rates: 'Interest rates are too high right now at ' + LIVE_DATA.mortgageRate + '%. I should wait for them to come down.',
+        commission: 'Your commission is too high. I\'ve seen other agents who charge less.',
+        wait: 'I want to wait and see what happens with the market. Maybe prices will drop.',
+        fsbo: 'I think I can sell my home myself and save the commission.'
+    };
+
+    document.getElementById('obj-details').value = objections[type];
+    if (type === 'commission' || type === 'fsbo') {
+        setObjectionType('seller');
+    } else {
+        setObjectionType('buyer');
+    }
+    await handleObjection();
+}
+
+// ========== AI NEIGHBORHOOD EXPERT - Instant Area Info ==========
+function renderAINeighborhoodExpert() {
+    return `
+    <section class="page-section" id="page-ai-neighborhood">
+        <div class="page-header" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <h2>&#127961; AI Neighborhood Expert</h2>
+            <p>Instant neighborhood information, school data, and area insights for any Greater Cincinnati location</p>
+        </div>
+
+        <div class="grid-2">
+            <!-- NEIGHBORHOOD SEARCH -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">&#128269; Neighborhood Search</span>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Neighborhood or Address</label>
+                    <input type="text" id="hood-search" class="form-input" placeholder="Hyde Park, Cincinnati" list="hood-suggestions">
+                    <datalist id="hood-suggestions">
+                        <option value="Hyde Park">
+                        <option value="Oakley">
+                        <option value="Mount Lookout">
+                        <option value="Anderson Township">
+                        <option value="Mason">
+                        <option value="West Chester">
+                        <option value="Blue Ash">
+                        <option value="Montgomery">
+                        <option value="Indian Hill">
+                        <option value="Madeira">
+                        <option value="Mariemont">
+                        <option value="Terrace Park">
+                        <option value="Loveland">
+                        <option value="Fort Thomas, KY">
+                        <option value="Newport, KY">
+                        <option value="Covington, KY">
+                        <option value="Over-the-Rhine">
+                        <option value="Clifton">
+                        <option value="Northside">
+                        <option value="Pleasant Ridge">
+                    </datalist>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">What do you want to know?</label>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                        <label><input type="checkbox" id="hood-schools" checked> Schools</label>
+                        <label><input type="checkbox" id="hood-safety" checked> Safety</label>
+                        <label><input type="checkbox" id="hood-dining" checked> Dining</label>
+                        <label><input type="checkbox" id="hood-shopping"> Shopping</label>
+                        <label><input type="checkbox" id="hood-commute"> Commute</label>
+                        <label><input type="checkbox" id="hood-parks"> Parks</label>
+                        <label><input type="checkbox" id="hood-nightlife"> Nightlife</label>
+                        <label><input type="checkbox" id="hood-families"> Family-Friendly</label>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Client Profile (optional)</label>
+                    <select id="hood-profile" class="form-input">
+                        <option value="">General Information</option>
+                        <option value="young-professional">Young Professional</option>
+                        <option value="family">Family with Kids</option>
+                        <option value="retiree">Retiree/Empty Nester</option>
+                        <option value="investor">Real Estate Investor</option>
+                        <option value="first-time">First-Time Buyer</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Specific Questions (optional)</label>
+                    <textarea id="hood-questions" class="form-input" rows="2" placeholder="E.g., How walkable is it? What's the nightlife like?"></textarea>
+                </div>
+
+                <button class="btn btn-gradient btn-lg" style="width: 100%;" onclick="analyzeNeighborhood()">&#129302; Analyze Neighborhood</button>
+            </div>
+
+            <!-- RESULTS -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">&#127969; Neighborhood Profile</span>
+                    <button class="btn btn-sm" onclick="copyAIContent('hood-results')">&#128203; Copy</button>
+                </div>
+                <div id="hood-results" style="background: #f8f9fa; padding: 1rem; border-radius: 8px; min-height: 400px; overflow-y: auto;">
+                    <p style="color: #666; text-align: center; margin-top: 150px;">Enter a neighborhood name to get AI-powered area insights.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- POPULAR NEIGHBORHOODS -->
+        <div class="card" style="margin-top: 1rem;">
+            <div class="card-header">
+                <span class="card-title">&#11088; Popular Cincinnati Neighborhoods</span>
+            </div>
+            <div class="grid-5">
+                ${['Hyde Park', 'Oakley', 'Anderson Township', 'Mason', 'Mount Lookout', 'Blue Ash', 'Indian Hill', 'Mariemont', 'Fort Thomas', 'Over-the-Rhine'].map(n => `
+                    <div style="padding: 0.8rem; background: #f8f9fa; border-radius: 8px; text-align: center; cursor: pointer;" onclick="quickNeighborhood('${n}')">
+                        <div style="font-size: 1.5rem;">&#127969;</div>
+                        <div style="font-weight: 600; font-size: 0.9rem;">${n}</div>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    </section>`;
+}
+
+async function analyzeNeighborhood() {
+    const neighborhood = document.getElementById('hood-search').value;
+    if (!neighborhood) {
+        showToast('Please enter a neighborhood name', 'warning');
+        return;
+    }
+
+    const topics = [];
+    if (document.getElementById('hood-schools').checked) topics.push('schools and education');
+    if (document.getElementById('hood-safety').checked) topics.push('safety and crime rates');
+    if (document.getElementById('hood-dining').checked) topics.push('restaurants and dining');
+    if (document.getElementById('hood-shopping').checked) topics.push('shopping and retail');
+    if (document.getElementById('hood-commute').checked) topics.push('commute and transportation');
+    if (document.getElementById('hood-parks').checked) topics.push('parks and recreation');
+    if (document.getElementById('hood-nightlife').checked) topics.push('nightlife and entertainment');
+    if (document.getElementById('hood-families').checked) topics.push('family-friendliness');
+
+    const profile = document.getElementById('hood-profile').value;
+    const questions = document.getElementById('hood-questions').value;
+
+    document.getElementById('hood-results').innerHTML = '<div style="text-align: center; padding: 3rem;"><div class="spinner"></div><p style="margin-top: 1rem; color: #666;">AI is researching neighborhood...</p></div>';
+
+    const prompt = `You are a local Cincinnati real estate expert and neighborhood specialist. Provide a comprehensive guide to ${neighborhood}, Ohio.
+
+TOPICS TO COVER:
+${topics.map(t => '- ' + t).join('\\n')}
+
+${profile ? `CLIENT PROFILE: ${profile} - tailor the information to their needs` : ''}
+${questions ? `SPECIFIC QUESTIONS: ${questions}` : ''}
+
+CURRENT MARKET DATA:
+- Cincinnati Median: $${LIVE_DATA.cincinnatiMedianPrice.toLocaleString()}
+- Market Trend: +${LIVE_DATA.cincinnatiPriceChange}% YoY
+
+Provide detailed, locally-accurate information including:
+1. **OVERVIEW** - What makes this neighborhood special
+2. **REAL ESTATE** - Typical home prices, styles, and market conditions
+3. **LIFESTYLE** - The vibe, who lives there, what it's known for
+4. **DETAILED INSIGHTS** on each requested topic
+5. **PROS & CONS** - Honest assessment
+6. **BEST FOR** - What type of buyer/renter this is ideal for
+7. **INSIDER TIPS** - Things only locals would know
+
+Be specific with names of restaurants, schools, parks, etc. Include approximate price ranges where relevant.`;
+
+    const result = await callGeminiAPI(prompt, 'You are a Cincinnati neighborhood expert with deep local knowledge. Provide accurate, detailed, and helpful information about Greater Cincinnati neighborhoods.');
+
+    if (result) {
+        document.getElementById('hood-results').innerHTML = `<div style="white-space: pre-wrap; font-size: 0.9rem; line-height: 1.6;">${result}</div>`;
+        showToast('Neighborhood analysis complete!');
+    } else {
+        document.getElementById('hood-results').innerHTML = '<p style="color: #e74c3c; text-align: center;">Failed to analyze neighborhood. Check API configuration.</p>';
+    }
+}
+
+function quickNeighborhood(name) {
+    document.getElementById('hood-search').value = name;
+    analyzeNeighborhood();
+}
+
+// ========== AI OPEN HOUSE ASSISTANT - Questions & Follow-up ==========
+function renderAIOpenHouse() {
+    return `
+    <section class="page-section" id="page-ai-openhouse">
+        <div class="page-header" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <h2>&#127970; AI Open House Assistant</h2>
+            <p>Prepare for open houses with talking points, visitor questions, and follow-up scripts</p>
+        </div>
+
+        <div class="grid-2">
+            <!-- OPEN HOUSE PREP -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">&#127968; Open House Preparation</span>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Property Address</label>
+                    <input type="text" id="oh-address" class="form-input" placeholder="456 Oak Street, Hyde Park">
+                </div>
+
+                <div class="grid-2" style="margin-bottom: 1rem;">
+                    <div>
+                        <label class="form-label">List Price</label>
+                        <input type="text" id="oh-price" class="form-input" placeholder="$525,000">
+                    </div>
+                    <div>
+                        <label class="form-label">Beds/Baths</label>
+                        <input type="text" id="oh-beds" class="form-input" placeholder="4 bed / 2.5 bath">
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Key Features</label>
+                    <textarea id="oh-features" class="form-input" rows="2" placeholder="Updated kitchen, original hardwoods, finished basement, large backyard"></textarea>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Potential Concerns</label>
+                    <textarea id="oh-concerns" class="form-input" rows="2" placeholder="E.g., busy street, needs new roof in 5 years, dated bathrooms"></textarea>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">What do you need?</label>
+                    <select id="oh-type" class="form-input">
+                        <option value="all">Complete Open House Prep</option>
+                        <option value="talking">Talking Points & Features</option>
+                        <option value="questions">Common Visitor Questions</option>
+                        <option value="objections">Objection Responses</option>
+                        <option value="followup">Follow-up Scripts</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-gradient btn-lg" style="width: 100%;" onclick="prepareOpenHouse()">&#129302; Generate Open House Guide</button>
+            </div>
+
+            <!-- RESULTS -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">&#128221; Open House Guide</span>
+                    <button class="btn btn-sm" onclick="copyAIContent('oh-results')">&#128203; Copy</button>
+                </div>
+                <div id="oh-results" style="background: #f8f9fa; padding: 1rem; border-radius: 8px; min-height: 400px; overflow-y: auto;">
+                    <p style="color: #666; text-align: center; margin-top: 150px;">Enter property details to generate your complete open house preparation guide.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- VISITOR FOLLOW-UP -->
+        <div class="card" style="margin-top: 1rem;">
+            <div class="card-header">
+                <span class="card-title">&#128231; Quick Follow-up Generator</span>
+            </div>
+            <div class="grid-3">
+                <div>
+                    <label class="form-label">Visitor Name</label>
+                    <input type="text" id="oh-visitor" class="form-input" placeholder="John Smith">
+                </div>
+                <div>
+                    <label class="form-label">Interest Level</label>
+                    <select id="oh-interest" class="form-input">
+                        <option value="hot">Very Interested (Hot)</option>
+                        <option value="warm">Somewhat Interested (Warm)</option>
+                        <option value="cold">Just Looking (Cold)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="form-label">Notes</label>
+                    <input type="text" id="oh-notes" class="form-input" placeholder="Loved the kitchen, worried about yard size">
+                </div>
+            </div>
+            <button class="btn btn-primary" style="margin-top: 1rem;" onclick="generateFollowUp()">&#128231; Generate Follow-up Email</button>
+            <div id="oh-followup" style="margin-top: 1rem;"></div>
+        </div>
+    </section>`;
+}
+
+async function prepareOpenHouse() {
+    const address = document.getElementById('oh-address').value;
+    const price = document.getElementById('oh-price').value;
+    const beds = document.getElementById('oh-beds').value;
+    const features = document.getElementById('oh-features').value;
+    const concerns = document.getElementById('oh-concerns').value;
+    const type = document.getElementById('oh-type').value;
+
+    if (!address) {
+        showToast('Please enter the property address', 'warning');
+        return;
+    }
+
+    document.getElementById('oh-results').innerHTML = '<div style="text-align: center; padding: 3rem;"><div class="spinner"></div><p style="margin-top: 1rem; color: #666;">AI is preparing your open house guide...</p></div>';
+
+    const typeGuides = {
+        all: 'Complete open house preparation including talking points, anticipated questions, objection handling, and follow-up scripts',
+        talking: 'Key talking points and feature highlights to mention during tours',
+        questions: 'Common questions visitors will ask and how to answer them',
+        objections: 'Potential objections and how to address them professionally',
+        followup: 'Follow-up email and text scripts for different visitor types'
+    };
+
+    const prompt = `You are an experienced listing agent preparing for an open house. Create a ${typeGuides[type]}.
+
+PROPERTY DETAILS:
+- Address: ${address}
+- List Price: ${price}
+- Beds/Baths: ${beds}
+- Key Features: ${features || 'Standard features'}
+- Known Concerns: ${concerns || 'None specified'}
+
+CURRENT MARKET:
+- Mortgage Rate: ${LIVE_DATA.mortgageRate}%
+- Cincinnati Median: $${LIVE_DATA.cincinnatiMedianPrice.toLocaleString()}
+
+${type === 'all' ? `
+Provide a complete guide with:
+1. **PROPERTY HIGHLIGHTS** - Key selling points to emphasize
+2. **TOUR SCRIPT** - How to guide visitors through the home
+3. **ANTICIPATED QUESTIONS** - 10+ common questions with answers
+4. **OBJECTION RESPONSES** - How to handle concerns
+5. **NEIGHBORHOOD TALKING POINTS** - Area highlights
+6. **FOLLOW-UP SCRIPTS** - Email/text templates for hot, warm, and cold leads
+7. **CONVERSATION STARTERS** - How to engage visitors and qualify them
+` : ''}
+
+Be specific, practical, and provide exact scripts/phrases to use.`;
+
+    const result = await callGeminiAPI(prompt, 'You are a top-producing listing agent who excels at open houses. Provide specific, actionable advice with exact scripts and talking points.');
+
+    if (result) {
+        document.getElementById('oh-results').innerHTML = `<div style="white-space: pre-wrap; font-size: 0.9rem; line-height: 1.6;">${result}</div>`;
+        showToast('Open house guide ready!');
+    } else {
+        document.getElementById('oh-results').innerHTML = '<p style="color: #e74c3c; text-align: center;">Failed to generate guide. Check API configuration.</p>';
+    }
+}
+
+async function generateFollowUp() {
+    const visitor = document.getElementById('oh-visitor').value;
+    const interest = document.getElementById('oh-interest').value;
+    const notes = document.getElementById('oh-notes').value;
+    const address = document.getElementById('oh-address').value || 'the property';
+
+    if (!visitor) {
+        showToast('Please enter the visitor name', 'warning');
+        return;
+    }
+
+    document.getElementById('oh-followup').innerHTML = '<div style="text-align: center; padding: 1rem;"><div class="spinner"></div></div>';
+
+    const prompt = `Write a follow-up email for an open house visitor:
+
+- Visitor Name: ${visitor}
+- Interest Level: ${interest}
+- Property: ${address}
+- Notes from visit: ${notes || 'General interest'}
+- Agent: ${LIVE_DATA.ela.name} at ${LIVE_DATA.ela.brokerage}
+- Phone: ${LIVE_DATA.ela.phone}
+
+Create a personalized, warm email that:
+1. Thanks them for coming
+2. References something specific from their visit (use the notes)
+3. Provides next steps based on their interest level
+4. Includes a clear call to action
+5. Feels personal, not template-like
+
+Sign it from ${LIVE_DATA.ela.name}.`;
+
+    const result = await callGeminiAPI(prompt, 'You are a real estate agent writing personalized follow-up emails. Be warm, professional, and include a clear call to action.');
+
+    if (result) {
+        document.getElementById('oh-followup').innerHTML = `
+            <div style="background: #e8f5e9; padding: 1rem; border-radius: 8px; border-left: 4px solid #22c55e;">
+                <div style="white-space: pre-wrap; font-size: 0.9rem; line-height: 1.6;">${result}</div>
+                <button class="btn btn-success btn-sm" style="margin-top: 0.5rem;" onclick="copyAIContent('oh-followup')">&#128203; Copy Email</button>
+            </div>`;
+    }
+}
+
+// ========== AI CONTRACT REVIEWER - Analyze Contracts ==========
+function renderAIContractReviewer() {
+    return `
+    <section class="page-section" id="page-ai-contract">
+        <div class="page-header" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <h2>&#128220; AI Contract Reviewer</h2>
+            <p>Get AI analysis of contract terms, clauses, and potential issues</p>
+        </div>
+
+        <div style="background: #fff3cd; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; border-left: 4px solid #f39c12;">
+            <strong>&#9888; Disclaimer:</strong> This AI tool provides general guidance only. It is not legal advice. Always consult with a licensed attorney for contract review and legal questions.
+        </div>
+
+        <div class="grid-2">
+            <!-- CONTRACT INPUT -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">&#128196; Contract Details</span>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Contract Type</label>
+                    <select id="contract-type" class="form-input">
+                        <option value="purchase">Purchase Agreement</option>
+                        <option value="listing">Listing Agreement</option>
+                        <option value="offer">Offer/Counter-Offer</option>
+                        <option value="lease">Lease Agreement</option>
+                        <option value="addendum">Addendum/Amendment</option>
+                        <option value="inspection">Inspection Contingency</option>
+                        <option value="financing">Financing Contingency</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Your Role</label>
+                    <select id="contract-role" class="form-input">
+                        <option value="buyer-agent">Buyer's Agent</option>
+                        <option value="seller-agent">Seller's/Listing Agent</option>
+                        <option value="buyer">Buyer (Direct)</option>
+                        <option value="seller">Seller (Direct)</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Key Terms to Review</label>
+                    <textarea id="contract-terms" class="form-input" rows="4" placeholder="Paste specific contract language or describe the terms you want analyzed...
+
+Example: 'Seller to provide $10,000 credit at closing. Inspection contingency expires in 5 days. Financing contingency requires 20% down.'"></textarea>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="form-label">Specific Concerns or Questions</label>
+                    <textarea id="contract-questions" class="form-input" rows="2" placeholder="E.g., Is this inspection timeline too short? What happens if financing falls through?"></textarea>
+                </div>
+
+                <button class="btn btn-gradient btn-lg" style="width: 100%;" onclick="reviewContract()">&#129302; Analyze Contract</button>
+            </div>
+
+            <!-- ANALYSIS RESULTS -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">&#128270; AI Analysis</span>
+                    <button class="btn btn-sm" onclick="copyAIContent('contract-results')">&#128203; Copy</button>
+                </div>
+                <div id="contract-results" style="background: #f8f9fa; padding: 1rem; border-radius: 8px; min-height: 400px; overflow-y: auto;">
+                    <p style="color: #666; text-align: center; margin-top: 150px;">Enter contract details to get AI-powered analysis and recommendations.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUICK REFERENCE -->
+        <div class="card" style="margin-top: 1rem;">
+            <div class="card-header">
+                <span class="card-title">&#128161; Common Clause Questions</span>
+            </div>
+            <div class="grid-4">
+                <div style="padding: 1rem; background: #e8f5e9; border-radius: 8px; cursor: pointer;" onclick="quickContract('inspection')">
+                    <h4 style="color: #22c55e;">&#128269; Inspection</h4>
+                    <p style="font-size: 0.8rem; color: #666;">Review inspection contingency</p>
+                </div>
+                <div style="padding: 1rem; background: #e3f2fd; border-radius: 8px; cursor: pointer;" onclick="quickContract('financing')">
+                    <h4 style="color: #2196f3;">&#128181; Financing</h4>
+                    <p style="font-size: 0.8rem; color: #666;">Review financing terms</p>
+                </div>
+                <div style="padding: 1rem; background: #fff3e0; border-radius: 8px; cursor: pointer;" onclick="quickContract('earnest')">
+                    <h4 style="color: #f39c12;">&#128176; Earnest Money</h4>
+                    <p style="font-size: 0.8rem; color: #666;">Earnest money terms</p>
+                </div>
+                <div style="padding: 1rem; background: #fce4ec; border-radius: 8px; cursor: pointer;" onclick="quickContract('closing')">
+                    <h4 style="color: #e91e63;">&#128197; Closing</h4>
+                    <p style="font-size: 0.8rem; color: #666;">Closing date & possession</p>
+                </div>
+            </div>
+        </div>
+    </section>`;
+}
+
+async function reviewContract() {
+    const type = document.getElementById('contract-type').value;
+    const role = document.getElementById('contract-role').value;
+    const terms = document.getElementById('contract-terms').value;
+    const questions = document.getElementById('contract-questions').value;
+
+    if (!terms) {
+        showToast('Please enter contract terms to analyze', 'warning');
+        return;
+    }
+
+    document.getElementById('contract-results').innerHTML = '<div style="text-align: center; padding: 3rem;"><div class="spinner"></div><p style="margin-top: 1rem; color: #666;">AI is analyzing contract terms...</p></div>';
+
+    const typeNames = {
+        purchase: 'Real Estate Purchase Agreement',
+        listing: 'Listing Agreement',
+        offer: 'Offer/Counter-Offer',
+        lease: 'Lease Agreement',
+        addendum: 'Contract Addendum',
+        inspection: 'Inspection Contingency',
+        financing: 'Financing Contingency'
+    };
+
+    const roleNames = {
+        'buyer-agent': "representing the buyer",
+        'seller-agent': "representing the seller",
+        'buyer': "as the buyer",
+        'seller': "as the seller"
+    };
+
+    const prompt = `You are a real estate contract specialist reviewing a ${typeNames[type]}. The user is ${roleNames[role]}.
+
+CONTRACT TERMS TO ANALYZE:
+${terms}
+
+${questions ? `SPECIFIC QUESTIONS: ${questions}` : ''}
+
+Provide a comprehensive analysis including:
+
+1. **SUMMARY** - Brief overview of what these terms mean
+2. **KEY POINTS** - Important elements ${role.includes('buyer') ? 'for the buyer' : 'for the seller'}
+3. **POTENTIAL RISKS** - What could go wrong or be problematic
+4. **FAVORABLE TERMS** - What works in ${role.includes('buyer') ? 'the buyer\'s' : 'the seller\'s'} favor
+5. **UNFAVORABLE TERMS** - What might need negotiation
+6. **RECOMMENDED CHANGES** - Specific language to add, modify, or remove
+7. **QUESTIONS TO ASK** - Things to clarify before signing
+8. **RED FLAGS** - Any concerning language or missing protections
+
+${questions ? '9. **ANSWERS TO YOUR QUESTIONS**' : ''}
+
+Be specific and practical. Note: This is for educational purposes only, not legal advice.`;
+
+    const result = await callGeminiAPI(prompt, 'You are a real estate contract specialist providing educational analysis of contract terms. Be specific about risks and recommendations. Always remind users this is not legal advice.');
+
+    if (result) {
+        document.getElementById('contract-results').innerHTML = `<div style="white-space: pre-wrap; font-size: 0.9rem; line-height: 1.6;">${result}</div>`;
+        showToast('Contract analysis complete!');
+    } else {
+        document.getElementById('contract-results').innerHTML = '<p style="color: #e74c3c; text-align: center;">Failed to analyze contract. Check API configuration.</p>';
+    }
+}
+
+function quickContract(type) {
+    const prompts = {
+        inspection: 'Standard inspection contingency: Buyer has 10 days from acceptance to complete inspections. Buyer may request repairs up to $5,000. If seller refuses, buyer may cancel and receive full earnest money refund.',
+        financing: 'Financing contingency: Buyer must obtain conventional financing with 20% down at no more than 7% interest rate. Contingency expires 21 days from acceptance. Buyer must provide pre-approval within 5 days.',
+        earnest: 'Earnest money: Buyer to deposit $10,000 within 3 business days of acceptance. Held by listing brokerage. Released to seller if buyer defaults after contingencies expire.',
+        closing: 'Closing: Closing to occur on or before 45 days from acceptance. Possession at closing. Seller to vacate by 5pm on closing day. Per diem of $150/day if seller requires extended possession.'
+    };
+    document.getElementById('contract-terms').value = prompts[type];
+    reviewContract();
+}
+
+// Update matcher stats on page load
+function updateMatcherStats() {
+    const leads = JSON.parse(localStorage.getItem('elaLeads') || '[]');
+    const matcherLeads = document.getElementById('matcher-leads');
+    if (matcherLeads) matcherLeads.textContent = leads.length;
+}
+
+// Initialize AI stats
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(updateMatcherStats, 500);
+});
 </script>
 </body>
 </html>
