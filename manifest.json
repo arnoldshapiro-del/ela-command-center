@@ -1,0 +1,16 @@
+{
+  "name": "Ela's Ultimate Social Media Command Center V3 - PRO EDITION",
+  "short_name": "Ela's Ultima",
+  "description": "Ela's Ultimate Social Media Command Center V3 - PRO EDITION - Mobile App",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1225",
+  "theme_color": "#ec4899",
+  "orientation": "any",
+  "icons": [
+    {"src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"},
+    {"src": "icons/icon.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "maskable"}
+  ],
+  "categories": ["productivity", "utilities"],
+  "prefer_related_applications": false
+}
