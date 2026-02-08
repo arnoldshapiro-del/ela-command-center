@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ela's Ultimate Social Media Command Center V3 - PRO EDITION</title>
   <!-- PWA -->
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#ec4899">
@@ -9,9 +12,9 @@
   <meta name="apple-mobile-web-app-title" content="Ela's Ultima">
   <link rel="apple-touch-icon" href="icons/icon.svg">
   <meta name="mobile-web-app-capable" content="yes">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ela's Ultimate Social Media Command Center V3 - PRO EDITION</title>
+  <!-- Preconnect to avatar API used throughout app -->
+  <link rel="preconnect" href="https://ui-avatars.com" crossorigin>
+  <link rel="dns-prefetch" href="https://ui-avatars.com">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
@@ -1754,10 +1757,14 @@ let scheduledPosts = JSON.parse(localStorage.getItem('scheduledPosts') || '[]');
 let postedHistory = JSON.parse(localStorage.getItem('postedHistory') || '[]');
 let settings = JSON.parse(localStorage.getItem('elaSettings') || '{}');
 let savedContent = JSON.parse(localStorage.getItem('savedContent') || '[]');
+const renderedPages = new Set();
 
 // ========== INIT ==========
 document.addEventListener('DOMContentLoaded', () => {
-    renderAllPages();
+    // Only render dashboard on load for fast startup
+    const container = document.getElementById('page-container');
+    container.innerHTML = renderDashboard();
+    renderedPages.add('dashboard');
     setupNavigation();
     showPage('dashboard');
     startLiveUpdates();
@@ -1784,11 +1791,50 @@ function setupNavigation() {
     });
 }
 
+// Page render map for lazy loading
+const PAGE_RENDERERS = {
+    dashboard: renderDashboard,
+    news: renderNews,
+    realtors: renderRealtors,
+    viral: renderViralContent,
+    generator: renderGenerator,
+    library: renderLibrary,
+    scripts: renderVideoScripts,
+    scheduler: renderScheduler,
+    posting: renderPosting,
+    autopost: renderAutoPost,
+    analytics: renderAnalytics,
+    competitors: renderCompetitors,
+    hashtags: renderHashtags,
+    neighborhoods: renderNeighborhoods,
+    leads: renderLeads,
+    email: renderEmail,
+    settings: renderSettings,
+    manual: renderManual,
+    'ai-writer': renderAIWriter,
+    'ai-assistant': renderAIAssistant,
+    'ai-property': renderAIPropertyAnalyzer,
+    'ai-matcher': renderAIClientMatcher,
+    'ai-predictor': renderAIMarketPredictor,
+    'ai-objections': renderAIObjectionHandler,
+    'ai-neighborhood': renderAINeighborhoodExpert,
+    'ai-openhouse': renderAIOpenHouse,
+    'ai-contract': renderAIContractReviewer
+};
+
 function showPage(page, addToHistory = true) {
     if (addToHistory && page !== currentPage) {
         navigationHistory.push(page);
     }
     currentPage = page;
+
+    // Lazy render: build page HTML on first visit
+    if (!renderedPages.has(page) && PAGE_RENDERERS[page]) {
+        const container = document.getElementById('page-container');
+        container.insertAdjacentHTML('beforeend', PAGE_RENDERERS[page]());
+        renderedPages.add(page);
+    }
+
     document.querySelectorAll('.page-section').forEach(p => p.classList.remove('active'));
     const pageEl = document.getElementById('page-' + page);
     if (pageEl) pageEl.classList.add('active');
@@ -1834,39 +1880,7 @@ function copyToClipboard(text) {
     showToast('Copied to clipboard!');
 }
 
-// ========== RENDER ALL PAGES ==========
-function renderAllPages() {
-    const container = document.getElementById('page-container');
-    container.innerHTML = `
-        ${renderDashboard()}
-        ${renderNews()}
-        ${renderRealtors()}
-        ${renderViralContent()}
-        ${renderGenerator()}
-        ${renderLibrary()}
-        ${renderVideoScripts()}
-        ${renderScheduler()}
-        ${renderPosting()}
-        ${renderAutoPost()}
-        ${renderAnalytics()}
-        ${renderCompetitors()}
-        ${renderHashtags()}
-        ${renderNeighborhoods()}
-        ${renderLeads()}
-        ${renderEmail()}
-        ${renderSettings()}
-        ${renderManual()}
-        ${renderAIWriter()}
-        ${renderAIAssistant()}
-        ${renderAIPropertyAnalyzer()}
-        ${renderAIClientMatcher()}
-        ${renderAIMarketPredictor()}
-        ${renderAIObjectionHandler()}
-        ${renderAINeighborhoodExpert()}
-        ${renderAIOpenHouse()}
-        ${renderAIContractReviewer()}
-    `;
-}
+// renderAllPages removed — pages are now lazy-rendered on first visit for fast startup
 
 // ========== DASHBOARD ==========
 function renderDashboard() {
